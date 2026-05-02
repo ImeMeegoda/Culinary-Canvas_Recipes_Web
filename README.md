@@ -30,7 +30,23 @@ A beautiful and interactive web app for browsing, viewing, and managing a collec
 - Fast, modern UI with responsive design
 - Easy to add or update recipes via code
 
+
 All recipe images are stored in the `public/assets` folder and referenced in the data for seamless display.
+
+---
+
+## 🚀 Future Improvements
+
+- **Dynamic Base Path Handling:** Use environment variables (e.g., `import.meta.env.BASE_URL`) for image paths to support both local and production environments.
+- **Image Fallback:** Display a default image if the recipe image is missing or fails to load.
+- **Recipe Image Upload:** Allow users to upload their own images for recipes.
+- **Responsive Design:** Further enhance the UI for all device sizes.
+- **Search & Filter:** Add search and filter features for recipes by tags, ingredients, or ratings.
+- **User Authentication:** Let users save favorites or submit their own recipes.
+- **Performance Optimization:** Lazy-load images for faster page loads.
+- **Accessibility:** Improve alt text and keyboard navigation for better accessibility.
+
+Contributions and suggestions are welcome!
 
 
 ## Deployment (GitHub Pages)
