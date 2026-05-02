@@ -31,12 +31,52 @@
   outline: none;
   position: relative;
   overflow: hidden;
+    /* Add ripple effect container */
+  }
+
+  /* Ripple effect for buttons */
+  .nice-btn::after, .filter-btn::after, .view-btn::after, .favorite-btn::after, .theme-toggle::after, .print-btn::after, .share-btn::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: width 0.4s cubic-bezier(0.4,0,0.2,1), height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.6s;
+  }
+
+  .nice-btn:active::after, .filter-btn:active::after, .view-btn:active::after, .favorite-btn:active::after, .theme-toggle:active::after, .print-btn:active::after, .share-btn:active::after {
+    width: 200%;
+    height: 200%;
+    opacity: 0.4;
+    transition: 0s;
+  }
 }
 
 .nice-btn:hover, .filter-btn:hover, .view-btn:hover, .favorite-btn:hover, .theme-toggle:hover, .print-btn:hover, .share-btn:hover {
   filter: var(--btn-hover-bright);
   box-shadow: 0 8px 24px rgba(255, 107, 107, 0.25);
   transform: translateY(-2px) scale(1.03);
+  /* Glowing effect */
+  box-shadow: 0 0 16px 4px rgba(255, 216, 107, 0.25), 0 8px 24px rgba(255, 107, 107, 0.25);
+}
+
+/* 3D press effect on active */
+.nice-btn:active, .filter-btn:active, .view-btn:active, .favorite-btn:active, .theme-toggle:active, .print-btn:active, .share-btn:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.15);
+}
+
+/* Enhanced focus-visible for accessibility */
+.nice-btn:focus-visible, .filter-btn:focus-visible, .view-btn:focus-visible, .favorite-btn:focus-visible, .theme-toggle:focus-visible, .print-btn:focus-visible, .share-btn:focus-visible {
+  outline: 2px solid #FFD86B;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(255, 216, 107, 0.25), var(--btn-focus);
 }
 
 .nice-btn:focus-visible, .filter-btn:focus-visible, .view-btn:focus-visible, .favorite-btn:focus-visible, .theme-toggle:focus-visible, .print-btn:focus-visible, .share-btn:focus-visible {
