@@ -18,7 +18,7 @@ A beautiful and interactive web app for browsing, viewing, and managing a collec
   yarn dev
   ```
 3. **Open in browser:**
-  Go to http://localhost:5173/Recipe-Card-Collection/
+  Go to http://localhost:5173/imemeegoda.github.io-Culinary-Canvas_Recipes--/
 
 ---
 
