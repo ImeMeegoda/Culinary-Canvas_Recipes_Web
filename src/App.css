@@ -131,8 +131,38 @@
       box-shadow: var(--shadow);
     }
     .button-icon {
-      height: 18px;
-      width: 18px;
+      height: 20px;
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 0.5em;
+      filter: drop-shadow(0 2px 6px rgba(255, 107, 107, 0.15));
+      transition: filter 0.2s;
+    }
+
+    /* Universal nice button for App.css context */
+    .nice-btn {
+      background: linear-gradient(90deg, #FF6B6B 0%, #FFD86B 100%);
+      color: #fff;
+      border: none;
+      border-radius: 32px;
+      box-shadow: 0 4px 16px rgba(255, 107, 107, 0.15);
+      padding: 0.7rem 2rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.4, 0.2, 0.2, 1);
+      outline: none;
+      position: relative;
+      overflow: hidden;
+    }
+    .nice-btn:hover {
+      filter: brightness(1.08);
+      box-shadow: 0 8px 24px rgba(255, 107, 107, 0.25);
+      transform: translateY(-2px) scale(1.03);
+    }
+    .nice-btn:focus-visible {
+      box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.3);
     }
   }
 

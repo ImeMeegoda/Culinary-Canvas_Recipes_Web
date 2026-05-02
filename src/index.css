@@ -9,6 +9,100 @@
   --accent: #4ECDC4;
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
+    --btn-gradient: linear-gradient(90deg, #FF6B6B 0%, #FFD86B 100%);
+    --btn-shadow: 0 4px 16px rgba(255, 107, 107, 0.15);
+    --btn-radius: 32px;
+    --btn-hover-bright: brightness(1.08);
+    --btn-focus: 0 0 0 3px rgba(255, 107, 107, 0.3);
+}
+/* Universal Nice Button Style */
+.nice-btn, .filter-btn, .view-btn, .favorite-btn, .theme-toggle, .print-btn, .share-btn {
+  background: var(--btn-gradient);
+  color: #fff;
+  border: none;
+  border-radius: var(--btn-radius);
+  box-shadow: var(--btn-shadow);
+  padding: 0.7rem 2rem;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0.2, 0.2, 1);
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.nice-btn:hover, .filter-btn:hover, .view-btn:hover, .favorite-btn:hover, .theme-toggle:hover, .print-btn:hover, .share-btn:hover {
+  filter: var(--btn-hover-bright);
+  box-shadow: 0 8px 24px rgba(255, 107, 107, 0.25);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.nice-btn:focus-visible, .filter-btn:focus-visible, .view-btn:focus-visible, .favorite-btn:focus-visible, .theme-toggle:focus-visible, .print-btn:focus-visible, .share-btn:focus-visible {
+  box-shadow: var(--btn-focus);
+}
+
+/* For icon buttons (like favorite-btn) */
+.favorite-btn {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--btn-gradient);
+  box-shadow: var(--btn-shadow);
+}
+
+.favorite-btn.filled svg {
+  fill: #FFD86B;
+  stroke: #FFD86B;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  background: var(--btn-gradient);
+  color: #fff;
+  border-radius: var(--btn-radius);
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  margin-right: 1rem;
+}
+
+/* Print and share buttons (if used) */
+.print-btn, .share-btn {
+  background: var(--btn-gradient);
+  color: #fff;
+  border-radius: var(--btn-radius);
+  padding: 0.6rem 1.5rem;
+  margin: 0 0.5rem;
+}
+
+/* Remove border for .view-btn, but keep gradient and effects */
+.view-btn {
+  background: var(--btn-gradient);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-family: var(--font-body);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease, box-shadow 0.3s, transform 0.3s;
+  position: relative;
+  border-radius: var(--btn-radius);
+  box-shadow: var(--btn-shadow);
+}
+
+/* Active state for filter buttons */
+.filter-btn.active {
+  background: linear-gradient(90deg, #FFD86B 0%, #FF6B6B 100%);
+  color: #fff;
+  box-shadow: 0 6px 24px rgba(255, 216, 107, 0.25);
+  border: none;
 }
 
 * {
