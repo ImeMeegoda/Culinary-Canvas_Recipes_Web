@@ -4,7 +4,7 @@ export const recipes: Recipe[] = [
   {
     id: '1',
     title: 'Gourmet Truffle Pasta',
-      image: '/https-imemeegoda.github.io-Culinary-Canvas_Recipes-/assets/gourmet_pasta.png',
+      image: '/imemeegoda.github.io-Culinary-Canvas_Recipes--/assets/gourmet_pasta.png',
     time: '30 min',
     servings: 2,
     tags: ['Vegetarian', 'Quick'],
@@ -15,7 +15,7 @@ export const recipes: Recipe[] = [
   {
     id: '2',
     title: 'Premium Avocado Toast',
-      image: '/https-imemeegoda.github.io-Culinary-Canvas_Recipes-/assets/avocado_toast.png',
+      image: '/imemeegoda.github.io-Culinary-Canvas_Recipes--/assets/avocado_toast.png',
     time: '15 min',
     servings: 1,
     tags: ['Vegetarian', 'Quick'],
@@ -26,7 +26,7 @@ export const recipes: Recipe[] = [
   {
     id: '3',
     title: 'Decadent Chocolate Lava Cake',
-      image: '/https-imemeegoda.github.io-Culinary-Canvas_Recipes-/assets/chocolate_lava_cake.png',
+      image: '/imemeegoda.github.io-Culinary-Canvas_Recipes--/assets/chocolate_lava_cake.png',
     time: '25 min',
     servings: 2,
     tags: ['Dessert'],
@@ -37,7 +37,7 @@ export const recipes: Recipe[] = [
   {
     id: '4',
     title: 'Vibrant Vegan Buddha Bowl',
-      image: '/https-imemeegoda.github.io-Culinary-Canvas_Recipes-/assets/vegan_bowl.png',
+      image: '/imemeegoda.github.io-Culinary-Canvas_Recipes--/assets/vegan_bowl.png',
     time: '45 min',
     servings: 4,
     tags: ['Vegetarian'],
@@ -48,7 +48,7 @@ export const recipes: Recipe[] = [
   {
     id: '7',
     title: 'Butter Chicken',
-      image: '/https-imemeegoda.github.io-Culinary-Canvas_Recipes-/assets/butter_chicken.png',
+      image: '/imemeegoda.github.io-Culinary-Canvas_Recipes--/assets/butter_chicken.png',
     emoji: '🍗',
     time: '45 mins',
     servings: 4,
@@ -60,7 +60,7 @@ export const recipes: Recipe[] = [
   {
     id: '8',
     title: 'Spaghetti Carbonara',
-      image: '/https-imemeegoda.github.io-Culinary-Canvas_Recipes-/assets/spaghetti_carbonara.png',
+      image: '/imemeegoda.github.io-Culinary-Canvas_Recipes--/assets/spaghetti_carbonara.png',
     emoji: '🍝',
     time: '25 mins',
     servings: 2,
@@ -72,7 +72,7 @@ export const recipes: Recipe[] = [
   {
     id: '9',
     title: 'Vegetable Stir Fry',
-      image: '/https-imemeegoda.github.io-Culinary-Canvas_Recipes-/assets/vegetable_stir_fry.png',
+      image: '/imemeegoda.github.io-Culinary-Canvas_Recipes--/assets/vegetable_stir_fry.png',
     emoji: '🥦',
     time: '20 mins',
     servings: 3,
@@ -84,7 +84,7 @@ export const recipes: Recipe[] = [
   {
     id: '11',
     title: 'Greek Salad',
-      image: '/https-imemeegoda.github.io-Culinary-Canvas_Recipes-/assets/greek_salad.png',
+      image: '/imemeegoda.github.io-Culinary-Canvas_Recipes--/assets/greek_salad.png',
     time: '10 mins',
     servings: 2,
     tags: ['Vegetarian', 'Greek', 'Quick'],
@@ -95,7 +95,7 @@ export const recipes: Recipe[] = [
   {
     id: '12',
     title: 'Beef Tacos',
-      image: '/https-imemeegoda.github.io-Culinary-Canvas_Recipes-/assets/beef_tacos.png',
+      image: '/imemeegoda.github.io-Culinary-Canvas_Recipes--/assets/beef_tacos.png',
     time: '30 mins',
     servings: 4,
     tags: ['Meat', 'Mexican', 'Spicy'],
@@ -106,7 +106,7 @@ export const recipes: Recipe[] = [
   {
     id: '13',
     title: 'Mango Smoothie',
-      image: 'assets/mango_smoothie.png',
+      image: '/imemeegoda.github.io-Culinary-Canvas_Recipes--/assets/mango_smoothie.png',
     time: '5 mins',
     servings: 1,
     tags: ['Vegetarian', 'Drink', 'Quick'],
@@ -117,7 +117,7 @@ export const recipes: Recipe[] = [
   {
     id: '14',
     title: 'Garlic Butter Shrimp',
-      image: 'assets/garlic_butter_shrimp.png',
+      image: '/imemeegoda.github.io-Culinary-Canvas_Recipes--/assets/garlic_butter_shrimp.png',
     time: '15 mins',
     servings: 2,
     tags: ['Meat', 'Seafood', 'Quick'],
@@ -128,7 +128,7 @@ export const recipes: Recipe[] = [
   {
     id: '15',
     title: 'Banana Pancakes',
-      image: 'assets/banana_pancakes.png',
+      image: '/imemeegoda.github.io-Culinary-Canvas_Recipes--/assets/banana_pancakes.png',
     time: '15 mins',
     servings: 2,
     tags: ['Dessert', 'Breakfast', 'Sweet'],
@@ -139,7 +139,7 @@ export const recipes: Recipe[] = [
   {
     id: '16',
     title: 'Tomato Basil Pasta',
-      image: 'assets/tomato_basil_pasta.png',
+      image: '/imemeegoda.github.io-Culinary-Canvas_Recipes--/assets/tomato_basil_pasta.png',
     time: '20 mins',
     servings: 2,
     tags: ['Vegetarian', 'Italian', 'Fresh'],
