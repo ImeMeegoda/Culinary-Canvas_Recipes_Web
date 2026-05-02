@@ -56,7 +56,6 @@
     opacity: 0.4;
     transition: 0s;
   }
-}
 
 .nice-btn:hover, .filter-btn:hover, .view-btn:hover, .favorite-btn:hover, .theme-toggle:hover, .print-btn:hover, .share-btn:hover {
   filter: var(--btn-hover-bright);
@@ -379,46 +378,6 @@ body {
   border-top: 1px solid rgba(255,255,255,0.05);
 }
 
-.view-btn {
-  background: transparent;
-  color: #fff;
-  border: none;
-  font-weight: 600;
-  font-family: var(--font-body);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-  position: relative;
-}
-
-.view-btn::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--primary);
-  transition: width 0.3s ease;
-}
-
-.view-btn:hover {
-  color: var(--primary);
-}
-
-.view-btn:hover::after {
-  width: 100%;
-}
-
-.view-btn svg {
-  transition: transform 0.3s ease;
-}
-
-.view-btn:hover svg {
-  transform: translateX(4px);
-}
 
 /* Modal Overlay */
 .modal-overlay {
@@ -634,7 +593,6 @@ body {
     left: 10px;
   }
 }
-}
 
 /* View Transitions API */
 ::view-transition-group(*),
@@ -684,9 +642,6 @@ body {
   color: #111;
 }
 
-.light-mode .view-btn {
-  color: #111;
-}
 
 .light-mode .modal-content {
   background: #fff;
