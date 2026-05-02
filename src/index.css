@@ -579,6 +579,61 @@ body {
   .modal-sections {
     grid-template-columns: 1fr;
   }
+  .app-container {
+    padding: 1rem;
+    max-width: 100vw;
+  }
+  .header h1 {
+    font-size: 2.1rem;
+  }
+  .filter-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .recipe-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .recipe-card {
+    border-radius: 14px;
+  }
+  .card-content {
+    padding: 1rem;
+  }
+  .modal-content {
+    padding: 0.5rem;
+    max-width: 98vw;
+    border-radius: 14px;
+  }
+  .modal-body {
+    padding: 1rem;
+  }
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  .modal-hero {
+    height: 160px;
+  }
+  .nice-btn, .filter-btn, .view-btn, .favorite-btn, .theme-toggle, .print-btn, .share-btn {
+    padding: 0.6rem 1.1rem;
+    font-size: 0.98rem;
+  }
+  .search-bar {
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.3rem;
+  }
+  .search-bar input, .sort-select {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+  .favorite-btn {
+    width: 32px;
+    height: 32px;
+    top: 10px;
+    left: 10px;
+  }
+}
 }
 
 /* View Transitions API */
