@@ -146,5 +146,170 @@ export const recipes: Recipe[] = [
     rating: 4.6,
     ingredients: ['200g pasta', '3 ripe tomatoes', '3 cloves garlic', 'Fresh basil leaves', '3 tbsp olive oil', 'Salt and pepper', 'Parmesan to serve'],
     steps: ['Cook pasta according to package directions.', 'Sauté garlic in olive oil 1 min.', 'Add chopped tomatoes and cook 8 mins.', 'Season with salt and pepper.', 'Toss with pasta, top with basil and parmesan.']
+  },
+  {
+    id: '17',
+    title: 'Lemon Garlic Salmon',
+    image: '/Culinary-Canvas_Recipes_Web/assets/lemon_garlic_salmon.png',
+    time: '20 min',
+    servings: 2,
+    tags: ['Seafood', 'Healthy', 'Quick'],
+    rating: 4.9,
+    ingredients: ['2 salmon fillets', '2 tbsp butter', '3 cloves garlic, minced', '1 lemon, sliced', 'Fresh dill', 'Salt and pepper'],
+    steps: ['Season salmon with salt and pepper.', 'Melt butter in a pan and sear salmon for 4-5 mins per side.', 'Add garlic and lemon slices to the pan for the last 2 mins.', 'Garnish with fresh dill and serve.']
+  },
+  {
+    id: '18',
+    title: 'Mushroom Risotto',
+    image: '/Culinary-Canvas_Recipes_Web/assets/mushroom_risotto.png',
+    time: '40 min',
+    servings: 4,
+    tags: ['Vegetarian', 'Italian', 'Gourmet'],
+    rating: 4.8,
+    ingredients: ['1.5 cups arborio rice', '500g mushrooms, sliced', '1L vegetable broth', '1/2 cup white wine', '1 onion, diced', '1/2 cup parmesan cheese', '2 tbsp butter'],
+    steps: ['Sauté onion and mushrooms in butter until soft.', 'Add rice and cook for 2 mins until translucent.', 'Deglaze with white wine and stir until absorbed.', 'Add broth one ladle at a time, stirring constantly until absorbed.', 'Stir in parmesan and serve warm.']
+  },
+  {
+    id: '19',
+    title: 'Chicken Tikka Masala',
+    image: '/Culinary-Canvas_Recipes_Web/assets/chicken_tikka_masala.png',
+    time: '50 min',
+    servings: 4,
+    tags: ['Meat', 'Indian', 'Spicy'],
+    rating: 4.9,
+    ingredients: ['500g chicken thighs, cubed', '1 cup yogurt', '2 tbsp tikka masala paste', '1 can tomato sauce', '1/2 cup heavy cream', 'Fresh cilantro'],
+    steps: ['Marinate chicken in yogurt and paste for 30 mins.', 'Brown chicken in a large pot.', 'Add tomato sauce and simmer for 15 mins.', 'Stir in cream and garnish with cilantro.', 'Serve with basmati rice.']
+  },
+  {
+    id: '20',
+    title: 'Caprese Skewers',
+    image: '/Culinary-Canvas_Recipes_Web/assets/caprese_skewers.png',
+    time: '15 min',
+    servings: 6,
+    tags: ['Vegetarian', 'Appetizer', 'Quick'],
+    rating: 4.7,
+    ingredients: ['Cherry tomatoes', 'Mini mozzarella balls', 'Fresh basil leaves', 'Balsamic glaze', 'Extra virgin olive oil'],
+    steps: ['Thread a tomato, basil leaf, and mozzarella ball onto each skewer.', 'Arrange on a platter.', 'Drizzle with olive oil and balsamic glaze.', 'Season with a pinch of sea salt.']
+  },
+  {
+    id: '21',
+    title: 'Blueberry Muffins',
+    image: '/Culinary-Canvas_Recipes_Web/assets/blueberry_muffins.png',
+    time: '35 min',
+    servings: 12,
+    tags: ['Baking', 'Sweet', 'Breakfast'],
+    rating: 4.8,
+    ingredients: ['2 cups all-purpose flour', '1 cup sugar', '2 tsp baking powder', '1/2 cup milk', '1/2 cup butter, melted', '1 egg', '1.5 cups blueberries'],
+    steps: ['Preheat oven to 375°F (190°C) and line a muffin tin.', 'Whisk dry ingredients in one bowl and wet in another.', 'Combine and gently fold in blueberries.', 'Fill muffin cups and bake for 20-25 mins.', 'Cool on a wire rack.']
+  },
+  {
+    id: '22',
+    title: 'Thai Green Curry',
+    image: '/Culinary-Canvas_Recipes_Web/assets/Thai_Green_Curry.png',
+    time: '30 min',
+    servings: 3,
+    tags: ['Vegan', 'Thai', 'Spicy'],
+    rating: 4.7,
+    ingredients: ['1 can coconut milk', '2 tbsp green curry paste', 'Mixed vegetables (bamboo shoots, peas)', 'Tofu cubes', 'Thai basil', 'Soy sauce'],
+    steps: ['Simmer curry paste in a bit of coconut milk until fragrant.', 'Add remaining milk and bring to a boil.', 'Add vegetables and tofu, simmer until tender.', 'Season with soy sauce and stir in Thai basil.', 'Serve with jasmine rice.']
+  },
+  {
+    id: '23',
+    title: 'Classic Cheeseburger',
+    image: '/Culinary-Canvas_Recipes_Web/assets/Classic_Cheeseburger.png',
+    time: '20 min',
+    servings: 2,
+    tags: ['Meat', 'American', 'Quick'],
+    rating: 4.8,
+    ingredients: ['250g ground beef', '2 brioche buns', '2 slices cheddar cheese', 'Lettuce, tomato, onion', 'Burger sauce'],
+    steps: ['Form beef into patties and season with salt.', 'Grill or pan-fry for 4 mins per side.', 'Add cheese in the last minute to melt.', 'Toast buns and assemble with toppings and sauce.']
+  },
+  {
+    id: '24',
+    title: 'Caesar Salad',
+    image: '/Culinary-Canvas_Recipes_Web/assets/Caesar_Salad.png',
+    time: '15 min',
+    servings: 2,
+    tags: ['Vegetarian', 'Salad', 'Fresh'],
+    rating: 4.6,
+    ingredients: ['1 head romaine lettuce', '1/2 cup croutons', '1/4 cup parmesan cheese', 'Caesar dressing', 'Lemon juice'],
+    steps: ['Chop lettuce into bite-sized pieces.', 'Toss with Caesar dressing and lemon juice.', 'Add croutons and parmesan cheese.', 'Serve immediately.']
+  },
+  {
+    id: '25',
+    title: 'French Onion Soup',
+    image: '/Culinary-Canvas_Recipes_Web/assets/French_Onion_Soup.png',
+    time: '1 hour',
+    servings: 4,
+    tags: ['Gourmet', 'French', 'Comfort'],
+    rating: 4.9,
+    ingredients: ['4 large onions, sliced', '2 tbsp butter', '1L beef broth', '1/2 cup dry sherry', 'Baguette slices', 'Gruyère cheese'],
+    steps: ['Caramelize onions in butter for 45 mins until deep brown.', 'Deglaze with sherry and add broth.', 'Simmer for 15 mins.', 'Top bowls with baguette and cheese, broil until bubbly.']
+  },
+  {
+    id: '26',
+    title: 'Shrimp Scampi',
+    image: '/Culinary-Canvas_Recipes_Web/assets/Shrimp_Scampi.png',
+    time: '20 min',
+    servings: 2,
+    tags: ['Seafood', 'Italian', 'Quick'],
+    rating: 4.7,
+    ingredients: ['300g shrimp', '250g linguine', '3 tbsp butter', '2 tbsp olive oil', '4 cloves garlic', 'White wine', 'Parsley'],
+    steps: ['Cook linguine until al dente.', 'Sauté garlic in butter and oil.', 'Add shrimp and cook until pink.', 'Deglaze with wine and toss with pasta and parsley.']
+  },
+  {
+    id: '27',
+    title: 'Ratatouille',
+    image: '/Culinary-Canvas_Recipes_Web/assets/Ratatouille.png',
+    time: '45 min',
+    servings: 4,
+    tags: ['Vegetarian', 'French', 'Healthy'],
+    rating: 4.8,
+    ingredients: ['1 eggplant', '2 zucchini', '2 bell peppers', '1 can crushed tomatoes', 'Herbes de Provence', 'Olive oil'],
+    steps: ['Slice all vegetables thinly.', 'Spread tomato sauce in a baking dish.', 'Arrange vegetables in an overlapping pattern.', 'Drizzle with oil and herbs, bake for 35 mins at 375°F.']
+  },
+  {
+    id: '28',
+    title: 'Pulled Pork Sandwich',
+    image: '/Culinary-Canvas_Recipes_Web/assets/Pulled_Pork_Sandwich.png',
+    time: '6 hours',
+    servings: 6,
+    tags: ['Meat', 'BBQ', 'Slow-cooked'],
+    rating: 4.9,
+    ingredients: ['1.5kg pork shoulder', 'BBQ sauce', 'Coleslaw', 'Burger buns', 'Dry rub spices'],
+    steps: ['Apply dry rub to pork and slow cook for 6 hours until tender.', 'Shred with forks and mix with BBQ sauce.', 'Serve on buns topped with fresh coleslaw.']
+  },
+  {
+    id: '29',
+    title: 'Eggs Benedict',
+    image: '/Culinary-Canvas_Recipes_Web/assets/Eggs_Benedict.png',
+    time: '25 min',
+    servings: 2,
+    tags: ['Breakfast', 'Gourmet', 'Classic'],
+    rating: 4.8,
+    ingredients: ['4 eggs', '2 English muffins', '4 slices Canadian bacon', 'Hollandaise sauce', 'Chives'],
+    steps: ['Poach eggs for 3 mins.', 'Toast English muffins and sear bacon.', 'Assemble muffin, bacon, and egg.', 'Top with warm hollandaise sauce and chives.']
+  },
+  {
+    id: '30',
+    title: 'Falafel Wrap',
+    image: '/Culinary-Canvas_Recipes_Web/assets/Falafel_Wrap.png',
+    time: '30 min',
+    servings: 4,
+    tags: ['Vegetarian', 'Middle Eastern', 'Healthy'],
+    rating: 4.7,
+    ingredients: ['1 can chickpeas', 'Parsley and cilantro', 'Garlic and onion', 'Tortilla wraps', 'Hummus', 'Tzatziki'],
+    steps: ['Pulse chickpeas, herbs, and garlic in a processor.', 'Form into balls and fry until golden.', 'Assemble wraps with hummus, falafel, and veggies.', 'Drizzle with tzatziki.']
+  },
+  {
+    id: '31',
+    title: 'Tiramisu',
+    image: '/Culinary-Canvas_Recipes_Web/assets/Tiramisu.png',
+    time: '30 min',
+    servings: 6,
+    tags: ['Dessert', 'Italian', 'Sweet'],
+    rating: 5.0,
+    ingredients: ['Ladyfingers', 'Mascarpone cheese', 'Strong coffee', '2 eggs', '1/2 cup sugar', 'Cocoa powder'],
+    steps: ['Whisk egg yolks and sugar, then fold in mascarpone.', 'Dip ladyfingers in coffee and layer in a dish.', 'Spread mascarpone mixture over layers.', 'Dust with cocoa powder and chill for 4 hours.']
   }
 ];
