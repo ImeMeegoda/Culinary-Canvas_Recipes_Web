@@ -1086,9 +1086,10 @@ body {
   color: var(--text-muted);
 }
 
-.social-links {
-  display: flex;
-  gap: 1.5rem;
+.creator-credit {
+  font-weight: 500;
+  color: var(--primary);
+  letter-spacing: 0.5px;
 }
 
 /* Input group styling */

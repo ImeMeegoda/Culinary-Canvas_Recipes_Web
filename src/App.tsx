@@ -194,11 +194,7 @@ function App() {
         </div>
         <div className="footer-bottom">
           <p>&copy; 2026 Culinary Canvas. All rights reserved.</p>
-          <div className="social-links">
-            <a href="#">Instagram</a>
-            <a href="#">Pinterest</a>
-            <a href="#">YouTube</a>
-          </div>
+          <p className="creator-credit">Imesha Meegoda is the creator and owner of this website</p>
         </div>
       </footer>
 
