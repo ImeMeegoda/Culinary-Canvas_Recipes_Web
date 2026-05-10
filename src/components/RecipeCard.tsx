@@ -45,7 +45,8 @@ export default function RecipeCard({ recipe, onView, isFavorite, onToggleFavorit
           )}
         </div>
         <div className="card-tags">
-          {recipe.tags.slice(0, 3).map(tag => (
+          <span className={`tag difficulty-tag ${recipe.difficulty?.toLowerCase()}`}>{recipe.difficulty}</span>
+          {recipe.tags.slice(0, 2).map(tag => (
             <span key={tag} className="tag">{tag}</span>
           ))}
         </div>

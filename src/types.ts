@@ -9,4 +9,6 @@ export interface Recipe {
   ingredients: string[];
   steps: string[];
   rating?: number;
+  difficulty?: 'Easy' | 'Medium' | 'Hard';
+  calories?: number;
 }

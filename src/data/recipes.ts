@@ -10,7 +10,9 @@ export const recipes: Recipe[] = [
     tags: ['Vegetarian', 'Quick'],
     rating: 4.8,
     ingredients: ['250g artisan linguine', '2 tbsp truffle oil', '1 cup wild mushrooms, sliced', '2 cloves garlic, minced', '1/2 cup heavy cream', '1/4 cup parmesan, freshly grated', 'Fresh parsley for garnish'],
-    steps: ['Boil salted water and cook pasta according to package instructions until al dente.', 'In a large pan, sauté garlic and mushrooms in truffle oil until golden brown.', 'Pour in heavy cream and simmer until slightly thickened.', 'Toss pasta into the creamy mushroom sauce. Remove from heat.', 'Stir in parmesan cheese and garnish with freshly chopped parsley.']
+    steps: ['Boil salted water and cook pasta according to package instructions until al dente.', 'In a large pan, sauté garlic and mushrooms in truffle oil until golden brown.', 'Pour in heavy cream and simmer until slightly thickened.', 'Toss pasta into the creamy mushroom sauce. Remove from heat.', 'Stir in parmesan cheese and garnish with freshly chopped parsley.'],
+    difficulty: 'Medium',
+    calories: 450
   },
   {
     id: '2',
@@ -21,7 +23,9 @@ export const recipes: Recipe[] = [
     tags: ['Vegetarian', 'Quick'],
     rating: 4.9,
     ingredients: ['2 slices rustic sourdough bread', '1 ripe avocado', '1 large free-range egg', 'Thinly sliced radishes', 'Microgreens', 'Sea salt and cracked black pepper'],
-    steps: ['Toast sourdough slices until crisp and golden.', 'Mash avocado with a pinch of sea salt and pepper in a small bowl.', 'Bring a pot of water to a gentle simmer. Swirl the water and drop the egg in to poach for 3 minutes.', 'Spread mashed avocado generously over the crisp toast.', 'Top with the poached egg, radish slices, and a vibrant handful of microgreens.']
+    steps: ['Toast sourdough slices until crisp and golden.', 'Mash avocado with a pinch of sea salt and pepper in a small bowl.', 'Bring a pot of water to a gentle simmer. Swirl the water and drop the egg in to poach for 3 minutes.', 'Spread mashed avocado generously over the crisp toast.', 'Top with the poached egg, radish slices, and a vibrant handful of microgreens.'],
+    difficulty: 'Easy',
+    calories: 320
   },
   {
     id: '3',
@@ -32,7 +36,9 @@ export const recipes: Recipe[] = [
     tags: ['Dessert'],
     rating: 5.0,
     ingredients: ['1/2 cup premium dark chocolate chips', '1/4 cup unsalted butter', '2 large eggs', '1/4 cup granulated sugar', '2 tbsp all-purpose flour', 'Vanilla bean ice cream for serving'],
-    steps: ['Preheat oven to 400°F (200°C) and grease two ramekins.', 'In a microwave or double boiler, melt chocolate chips and butter together until smooth.', 'In a separate bowl, whisk eggs and sugar until pale, then fold in the warm chocolate mixture.', 'Gently stir in the flour just until combined.', 'Pour batter evenly into ramekins and bake for exactly 12 minutes so the center remains gooey.', 'Invert onto plates and serve immediately with a scoop of vanilla bean ice cream.']
+    steps: ['Preheat oven to 400°F (200°C) and grease two ramekins.', 'In a microwave or double boiler, melt chocolate chips and butter together until smooth.', 'In a separate bowl, whisk eggs and sugar until pale, then fold in the warm chocolate mixture.', 'Gently stir in the flour just until combined.', 'Pour batter evenly into ramekins and bake for exactly 12 minutes so the center remains gooey.', 'Invert onto plates and serve immediately with a scoop of vanilla bean ice cream.'],
+    difficulty: 'Medium',
+    calories: 550
   },
   {
     id: '4',
@@ -43,7 +49,9 @@ export const recipes: Recipe[] = [
     tags: ['Vegetarian'],
     rating: 4.7,
     ingredients: ['1 cup quinoa, rinsed', '2 sweet potatoes, cubed', '1 can chickpeas, rinsed and dried', '1 ripe avocado, sliced', 'Crisp mixed greens', '1/4 cup tahini', '1 lemon, juiced'],
-    steps: ['Preheat oven to 400°F (200°C). Toss sweet potatoes and chickpeas with olive oil and spices, then roast for 25 minutes.', 'Cook quinoa according to package directions until fluffy.', 'Whisk tahini, lemon juice, a splash of water, and salt to create a creamy dressing.', 'Divide greens and quinoa into serving bowls.', 'Arrange roasted sweet potatoes, crispy chickpeas, and avocado slices on top.', 'Drizzle generously with the green tahini dressing before serving.']
+    steps: ['Preheat oven to 400°F (200°C). Toss sweet potatoes and chickpeas with olive oil and spices, then roast for 25 minutes.', 'Cook quinoa according to package directions until fluffy.', 'Whisk tahini, lemon juice, a splash of water, and salt to create a creamy dressing.', 'Divide greens and quinoa into serving bowls.', 'Arrange roasted sweet potatoes, crispy chickpeas, and avocado slices on top.', 'Drizzle generously with the green tahini dressing before serving.'],
+    difficulty: 'Easy',
+    calories: 380
   },
   {
     id: '7',
@@ -55,7 +63,9 @@ export const recipes: Recipe[] = [
     tags: ['Meat', 'Indian', 'Creamy'],
     rating: 4.8,
     ingredients: ['500g chicken', '1 cup yogurt', '2 tbsp butter', '1 cup tomato puree', '1 cup heavy cream', '2 tsp garam masala', '1 tsp turmeric', 'Salt to taste'],
-    steps: ['Marinate chicken in yogurt and spices for 30 mins.', 'Cook chicken in butter until golden.', 'Add tomato puree and simmer 10 mins.', 'Stir in cream and cook 5 more mins.', 'Serve with naan or rice.']
+    steps: ['Marinate chicken in yogurt and spices for 30 mins.', 'Cook chicken in butter until golden.', 'Add tomato puree and simmer 10 mins.', 'Stir in cream and cook 5 more mins.', 'Serve with naan or rice.'],
+    difficulty: 'Medium',
+    calories: 480
   },
   {
     id: '8',
@@ -67,7 +77,9 @@ export const recipes: Recipe[] = [
     tags: ['Meat', 'Italian', 'Quick'],
     rating: 4.6,
     ingredients: ['200g spaghetti', '100g bacon or pancetta', '2 eggs', '50g parmesan', '2 cloves garlic', 'Black pepper', 'Salt'],
-    steps: ['Cook spaghetti until al dente.', 'Fry bacon with garlic until crispy.', 'Mix eggs and parmesan in a bowl.', 'Combine hot pasta with bacon, then pour egg mix.', 'Toss quickly off heat. Season with pepper and serve.']
+    steps: ['Cook spaghetti until al dente.', 'Fry bacon with garlic until crispy.', 'Mix eggs and parmesan in a bowl.', 'Combine hot pasta with bacon, then pour egg mix.', 'Toss quickly off heat. Season with pepper and serve.'],
+    difficulty: 'Medium',
+    calories: 620
   },
   {
     id: '9',
@@ -79,7 +91,9 @@ export const recipes: Recipe[] = [
     tags: ['Vegetarian', 'Quick', 'Healthy'],
     rating: 4.5,
     ingredients: ['1 cup broccoli', '1 bell pepper', '1 carrot', '1 cup snap peas', '3 tbsp soy sauce', '1 tbsp sesame oil', '2 cloves garlic', '1 tsp ginger'],
-    steps: ['Chop all vegetables uniformly.', 'Mix soy sauce, sesame oil, and ginger for sauce.', 'Stir fry vegetables in a hot wok starting with carrots.', 'Add garlic and sauce, toss for 2 mins.', 'Serve hot.']
+    steps: ['Chop all vegetables uniformly.', 'Mix soy sauce, sesame oil, and ginger for sauce.', 'Stir fry vegetables in a hot wok starting with carrots.', 'Add garlic and sauce, toss for 2 mins.', 'Serve hot.'],
+    difficulty: 'Easy',
+    calories: 210
   },
   {
     id: '11',
@@ -90,7 +104,9 @@ export const recipes: Recipe[] = [
     tags: ['Vegetarian', 'Greek', 'Quick'],
     rating: 4.7,
     ingredients: ['2 tomatoes', '1 cucumber', '1/2 red onion', '100g feta cheese', 'Handful olives', '3 tbsp olive oil', '1 tsp oregano', 'Salt and pepper'],
-    steps: ['Chop tomatoes, cucumber, and onion into chunks.', 'Add olives and crumbled feta.', 'Drizzle with olive oil.', 'Sprinkle oregano, salt, and pepper.', 'Toss gently and serve fresh.']
+    steps: ['Chop tomatoes, cucumber, and onion into chunks.', 'Add olives and crumbled feta.', 'Drizzle with olive oil.', 'Sprinkle oregano, salt, and pepper.', 'Toss gently and serve fresh.'],
+    difficulty: 'Easy',
+    calories: 180
   },
   {
     id: '12',
@@ -101,7 +117,9 @@ export const recipes: Recipe[] = [
     tags: ['Meat', 'Mexican', 'Spicy'],
     rating: 4.8,
     ingredients: ['500g ground beef', '8 taco shells', '1 onion', '2 tsp cumin', '1 tsp chili powder', '1 cup salsa', '1 cup shredded cheese', 'Sour cream', 'Lettuce'],
-    steps: ['Cook onion in oil until soft.', 'Add beef and cook until browned.', 'Season with cumin and chili powder.', 'Fill taco shells with beef mix.', 'Top with salsa, cheese, sour cream, and lettuce.']
+    steps: ['Cook onion in oil until soft.', 'Add beef and cook until browned.', 'Season with cumin and chili powder.', 'Fill taco shells with beef mix.', 'Top with salsa, cheese, sour cream, and lettuce.'],
+    difficulty: 'Medium',
+    calories: 520
   },
   {
     id: '13',
@@ -112,7 +130,9 @@ export const recipes: Recipe[] = [
     tags: ['Vegetarian', 'Drink', 'Quick'],
     rating: 4.9,
     ingredients: ['1 ripe mango', '1/2 cup yogurt', '1/2 cup milk', '1 tbsp honey', 'Ice cubes'],
-    steps: ['Peel and chop the mango.', 'Add all ingredients to a blender.', 'Blend until smooth.', 'Pour into a glass and serve cold.']
+    steps: ['Peel and chop the mango.', 'Add all ingredients to a blender.', 'Blend until smooth.', 'Pour into a glass and serve cold.'],
+    difficulty: 'Easy',
+    calories: 240
   },
   {
     id: '14',
@@ -123,7 +143,9 @@ export const recipes: Recipe[] = [
     tags: ['Meat', 'Seafood', 'Quick'],
     rating: 4.7,
     ingredients: ['300g shrimp peeled', '4 tbsp butter', '5 cloves garlic', 'Juice of 1 lemon', 'Fresh parsley', 'Salt and pepper'],
-    steps: ['Melt butter in a pan over medium heat.', 'Add minced garlic and cook 1 min.', 'Add shrimp and cook 2 mins each side.', 'Squeeze lemon juice over shrimp.', 'Garnish with parsley and serve immediately.']
+    steps: ['Melt butter in a pan over medium heat.', 'Add minced garlic and cook 1 min.', 'Add shrimp and cook 2 mins each side.', 'Squeeze lemon juice over shrimp.', 'Garnish with parsley and serve immediately.'],
+    difficulty: 'Easy',
+    calories: 290
   },
   {
     id: '15',
@@ -134,7 +156,9 @@ export const recipes: Recipe[] = [
     tags: ['Dessert', 'Breakfast', 'Sweet'],
     rating: 4.8,
     ingredients: ['2 ripe bananas', '2 eggs', '1/2 cup flour', '1/2 tsp baking powder', 'Pinch of salt', 'Butter for frying', 'Maple syrup to serve'],
-    steps: ['Mash bananas in a bowl.', 'Beat in eggs until combined.', 'Stir in flour, baking powder, and salt.', 'Heat butter in a pan, pour small rounds of batter.', 'Cook 2 mins each side. Serve with maple syrup.']
+    steps: ['Mash bananas in a bowl.', 'Beat in eggs until combined.', 'Stir in flour, baking powder, and salt.', 'Heat butter in a pan, pour small rounds of batter.', 'Cook 2 mins each side. Serve with maple syrup.'],
+    difficulty: 'Easy',
+    calories: 410
   },
   {
     id: '16',
@@ -145,7 +169,9 @@ export const recipes: Recipe[] = [
     tags: ['Vegetarian', 'Italian', 'Fresh'],
     rating: 4.6,
     ingredients: ['200g pasta', '3 ripe tomatoes', '3 cloves garlic', 'Fresh basil leaves', '3 tbsp olive oil', 'Salt and pepper', 'Parmesan to serve'],
-    steps: ['Cook pasta according to package directions.', 'Sauté garlic in olive oil 1 min.', 'Add chopped tomatoes and cook 8 mins.', 'Season with salt and pepper.', 'Toss with pasta, top with basil and parmesan.']
+    steps: ['Cook pasta according to package directions.', 'Sauté garlic in olive oil 1 min.', 'Add chopped tomatoes and cook 8 mins.', 'Season with salt and pepper.', 'Toss with pasta, top with basil and parmesan.'],
+    difficulty: 'Easy',
+    calories: 380
   },
   {
     id: '17',
@@ -156,7 +182,9 @@ export const recipes: Recipe[] = [
     tags: ['Seafood', 'Healthy', 'Quick'],
     rating: 4.9,
     ingredients: ['2 salmon fillets', '2 tbsp butter', '3 cloves garlic, minced', '1 lemon, sliced', 'Fresh dill', 'Salt and pepper'],
-    steps: ['Season salmon with salt and pepper.', 'Melt butter in a pan and sear salmon for 4-5 mins per side.', 'Add garlic and lemon slices to the pan for the last 2 mins.', 'Garnish with fresh dill and serve.']
+    steps: ['Season salmon with salt and pepper.', 'Melt butter in a pan and sear salmon for 4-5 mins per side.', 'Add garlic and lemon slices to the pan for the last 2 mins.', 'Garnish with fresh dill and serve.'],
+    difficulty: 'Easy',
+    calories: 340
   },
   {
     id: '18',
@@ -167,7 +195,9 @@ export const recipes: Recipe[] = [
     tags: ['Vegetarian', 'Italian', 'Gourmet'],
     rating: 4.8,
     ingredients: ['1.5 cups arborio rice', '500g mushrooms, sliced', '1L vegetable broth', '1/2 cup white wine', '1 onion, diced', '1/2 cup parmesan cheese', '2 tbsp butter'],
-    steps: ['Sauté onion and mushrooms in butter until soft.', 'Add rice and cook for 2 mins until translucent.', 'Deglaze with white wine and stir until absorbed.', 'Add broth one ladle at a time, stirring constantly until absorbed.', 'Stir in parmesan and serve warm.']
+    steps: ['Sauté onion and mushrooms in butter until soft.', 'Add rice and cook for 2 mins until translucent.', 'Deglaze with white wine and stir until absorbed.', 'Add broth one ladle at a time, stirring constantly until absorbed.', 'Stir in parmesan and serve warm.'],
+    difficulty: 'Hard',
+    calories: 420
   },
   {
     id: '19',
@@ -178,7 +208,9 @@ export const recipes: Recipe[] = [
     tags: ['Meat', 'Indian', 'Spicy'],
     rating: 4.9,
     ingredients: ['500g chicken thighs, cubed', '1 cup yogurt', '2 tbsp tikka masala paste', '1 can tomato sauce', '1/2 cup heavy cream', 'Fresh cilantro'],
-    steps: ['Marinate chicken in yogurt and paste for 30 mins.', 'Brown chicken in a large pot.', 'Add tomato sauce and simmer for 15 mins.', 'Stir in cream and garnish with cilantro.', 'Serve with basmati rice.']
+    steps: ['Marinate chicken in yogurt and paste for 30 mins.', 'Brown chicken in a large pot.', 'Add tomato sauce and simmer for 15 mins.', 'Stir in cream and garnish with cilantro.', 'Serve with basmati rice.'],
+    difficulty: 'Medium',
+    calories: 510
   },
   {
     id: '20',
@@ -189,7 +221,9 @@ export const recipes: Recipe[] = [
     tags: ['Vegetarian', 'Appetizer', 'Quick'],
     rating: 4.7,
     ingredients: ['Cherry tomatoes', 'Mini mozzarella balls', 'Fresh basil leaves', 'Balsamic glaze', 'Extra virgin olive oil'],
-    steps: ['Thread a tomato, basil leaf, and mozzarella ball onto each skewer.', 'Arrange on a platter.', 'Drizzle with olive oil and balsamic glaze.', 'Season with a pinch of sea salt.']
+    steps: ['Thread a tomato, basil leaf, and mozzarella ball onto each skewer.', 'Arrange on a platter.', 'Drizzle with olive oil and balsamic glaze.', 'Season with a pinch of sea salt.'],
+    difficulty: 'Easy',
+    calories: 120
   },
   {
     id: '21',
@@ -200,7 +234,9 @@ export const recipes: Recipe[] = [
     tags: ['Baking', 'Sweet', 'Breakfast'],
     rating: 4.8,
     ingredients: ['2 cups all-purpose flour', '1 cup sugar', '2 tsp baking powder', '1/2 cup milk', '1/2 cup butter, melted', '1 egg', '1.5 cups blueberries'],
-    steps: ['Preheat oven to 375°F (190°C) and line a muffin tin.', 'Whisk dry ingredients in one bowl and wet in another.', 'Combine and gently fold in blueberries.', 'Fill muffin cups and bake for 20-25 mins.', 'Cool on a wire rack.']
+    steps: ['Preheat oven to 375°F (190°C) and line a muffin tin.', 'Whisk dry ingredients in one bowl and wet in another.', 'Combine and gently fold in blueberries.', 'Fill muffin cups and bake for 20-25 mins.', 'Cool on a wire rack.'],
+    difficulty: 'Medium',
+    calories: 280
   },
   {
     id: '22',
@@ -211,7 +247,9 @@ export const recipes: Recipe[] = [
     tags: ['Vegan', 'Thai', 'Spicy'],
     rating: 4.7,
     ingredients: ['1 can coconut milk', '2 tbsp green curry paste', 'Mixed vegetables (bamboo shoots, peas)', 'Tofu cubes', 'Thai basil', 'Soy sauce'],
-    steps: ['Simmer curry paste in a bit of coconut milk until fragrant.', 'Add remaining milk and bring to a boil.', 'Add vegetables and tofu, simmer until tender.', 'Season with soy sauce and stir in Thai basil.', 'Serve with jasmine rice.']
+    steps: ['Simmer curry paste in a bit of coconut milk until fragrant.', 'Add remaining milk and bring to a boil.', 'Add vegetables and tofu, simmer until tender.', 'Season with soy sauce and stir in Thai basil.', 'Serve with jasmine rice.'],
+    difficulty: 'Medium',
+    calories: 390
   },
   {
     id: '23',
@@ -222,7 +260,9 @@ export const recipes: Recipe[] = [
     tags: ['Meat', 'American', 'Quick'],
     rating: 4.8,
     ingredients: ['250g ground beef', '2 brioche buns', '2 slices cheddar cheese', 'Lettuce, tomato, onion', 'Burger sauce'],
-    steps: ['Form beef into patties and season with salt.', 'Grill or pan-fry for 4 mins per side.', 'Add cheese in the last minute to melt.', 'Toast buns and assemble with toppings and sauce.']
+    steps: ['Form beef into patties and season with salt.', 'Grill or pan-fry for 4 mins per side.', 'Add cheese in the last minute to melt.', 'Toast buns and assemble with toppings and sauce.'],
+    difficulty: 'Easy',
+    calories: 680
   },
   {
     id: '24',
@@ -233,7 +273,9 @@ export const recipes: Recipe[] = [
     tags: ['Vegetarian', 'Salad', 'Fresh'],
     rating: 4.6,
     ingredients: ['1 head romaine lettuce', '1/2 cup croutons', '1/4 cup parmesan cheese', 'Caesar dressing', 'Lemon juice'],
-    steps: ['Chop lettuce into bite-sized pieces.', 'Toss with Caesar dressing and lemon juice.', 'Add croutons and parmesan cheese.', 'Serve immediately.']
+    steps: ['Chop lettuce into bite-sized pieces.', 'Toss with Caesar dressing and lemon juice.', 'Add croutons and parmesan cheese.', 'Serve immediately.'],
+    difficulty: 'Easy',
+    calories: 310
   },
   {
     id: '25',
@@ -244,7 +286,9 @@ export const recipes: Recipe[] = [
     tags: ['Gourmet', 'French', 'Comfort'],
     rating: 4.9,
     ingredients: ['4 large onions, sliced', '2 tbsp butter', '1L beef broth', '1/2 cup dry sherry', 'Baguette slices', 'Gruyère cheese'],
-    steps: ['Caramelize onions in butter for 45 mins until deep brown.', 'Deglaze with sherry and add broth.', 'Simmer for 15 mins.', 'Top bowls with baguette and cheese, broil until bubbly.']
+    steps: ['Caramelize onions in butter for 45 mins until deep brown.', 'Deglaze with sherry and add broth.', 'Simmer for 15 mins.', 'Top bowls with baguette and cheese, broil until bubbly.'],
+    difficulty: 'Hard',
+    calories: 440
   },
   {
     id: '26',
@@ -255,7 +299,9 @@ export const recipes: Recipe[] = [
     tags: ['Seafood', 'Italian', 'Quick'],
     rating: 4.7,
     ingredients: ['300g shrimp', '250g linguine', '3 tbsp butter', '2 tbsp olive oil', '4 cloves garlic', 'White wine', 'Parsley'],
-    steps: ['Cook linguine until al dente.', 'Sauté garlic in butter and oil.', 'Add shrimp and cook until pink.', 'Deglaze with wine and toss with pasta and parsley.']
+    steps: ['Cook linguine until al dente.', 'Sauté garlic in butter and oil.', 'Add shrimp and cook until pink.', 'Deglaze with wine and toss with pasta and parsley.'],
+    difficulty: 'Easy',
+    calories: 460
   },
   {
     id: '27',
@@ -266,7 +312,9 @@ export const recipes: Recipe[] = [
     tags: ['Vegetarian', 'French', 'Healthy'],
     rating: 4.8,
     ingredients: ['1 eggplant', '2 zucchini', '2 bell peppers', '1 can crushed tomatoes', 'Herbes de Provence', 'Olive oil'],
-    steps: ['Slice all vegetables thinly.', 'Spread tomato sauce in a baking dish.', 'Arrange vegetables in an overlapping pattern.', 'Drizzle with oil and herbs, bake for 35 mins at 375°F.']
+    steps: ['Slice all vegetables thinly.', 'Spread tomato sauce in a baking dish.', 'Arrange vegetables in an overlapping pattern.', 'Drizzle with oil and herbs, bake for 35 mins at 375°F.'],
+    difficulty: 'Medium',
+    calories: 230
   },
   {
     id: '28',
@@ -277,7 +325,9 @@ export const recipes: Recipe[] = [
     tags: ['Meat', 'BBQ', 'Slow-cooked'],
     rating: 4.9,
     ingredients: ['1.5kg pork shoulder', 'BBQ sauce', 'Coleslaw', 'Burger buns', 'Dry rub spices'],
-    steps: ['Apply dry rub to pork and slow cook for 6 hours until tender.', 'Shred with forks and mix with BBQ sauce.', 'Serve on buns topped with fresh coleslaw.']
+    steps: ['Apply dry rub to pork and slow cook for 6 hours until tender.', 'Shred with forks and mix with BBQ sauce.', 'Serve on buns topped with fresh coleslaw.'],
+    difficulty: 'Hard',
+    calories: 720
   },
   {
     id: '29',
@@ -288,7 +338,9 @@ export const recipes: Recipe[] = [
     tags: ['Breakfast', 'Gourmet', 'Classic'],
     rating: 4.8,
     ingredients: ['4 eggs', '2 English muffins', '4 slices Canadian bacon', 'Hollandaise sauce', 'Chives'],
-    steps: ['Poach eggs for 3 mins.', 'Toast English muffins and sear bacon.', 'Assemble muffin, bacon, and egg.', 'Top with warm hollandaise sauce and chives.']
+    steps: ['Poach eggs for 3 mins.', 'Toast English muffins and sear bacon.', 'Assemble muffin, bacon, and egg.', 'Top with warm hollandaise sauce and chives.'],
+    difficulty: 'Hard',
+    calories: 590
   },
   {
     id: '30',
@@ -299,7 +351,9 @@ export const recipes: Recipe[] = [
     tags: ['Vegetarian', 'Middle Eastern', 'Healthy'],
     rating: 4.7,
     ingredients: ['1 can chickpeas', 'Parsley and cilantro', 'Garlic and onion', 'Tortilla wraps', 'Hummus', 'Tzatziki'],
-    steps: ['Pulse chickpeas, herbs, and garlic in a processor.', 'Form into balls and fry until golden.', 'Assemble wraps with hummus, falafel, and veggies.', 'Drizzle with tzatziki.']
+    steps: ['Pulse chickpeas, herbs, and garlic in a processor.', 'Form into balls and fry until golden.', 'Assemble wraps with hummus, falafel, and veggies.', 'Drizzle with tzatziki.'],
+    difficulty: 'Medium',
+    calories: 430
   },
   {
     id: '31',
@@ -310,6 +364,8 @@ export const recipes: Recipe[] = [
     tags: ['Dessert', 'Italian', 'Sweet'],
     rating: 5.0,
     ingredients: ['Ladyfingers', 'Mascarpone cheese', 'Strong coffee', '2 eggs', '1/2 cup sugar', 'Cocoa powder'],
-    steps: ['Whisk egg yolks and sugar, then fold in mascarpone.', 'Dip ladyfingers in coffee and layer in a dish.', 'Spread mascarpone mixture over layers.', 'Dust with cocoa powder and chill for 4 hours.']
+    steps: ['Whisk egg yolks and sugar, then fold in mascarpone.', 'Dip ladyfingers in coffee and layer in a dish.', 'Spread mascarpone mixture over layers.', 'Dust with cocoa powder and chill for 4 hours.'],
+    difficulty: 'Hard',
+    calories: 520
   }
 ];

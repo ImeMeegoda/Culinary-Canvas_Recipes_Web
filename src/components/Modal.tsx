@@ -7,7 +7,10 @@ interface Props {
 }
 
 export default function Modal({ recipe, onClose }: Props) {
-  
+  const [servings, setServings] = useState(recipe.servings);
+  const [cookMode, setCookMode] = useState(false);
+  const [checked, setChecked] = useState<boolean[]>(() => recipe.ingredients.map(() => false));
+
   // Prevent scrolling on background when modal is open
   useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -16,13 +19,23 @@ export default function Modal({ recipe, onClose }: Props) {
     };
   }, []);
 
-  const [checked, setChecked] = useState<boolean[]>(() => recipe.ingredients.map(() => false));
   useEffect(() => {
     setChecked(recipe.ingredients.map(() => false));
+    setServings(recipe.servings);
   }, [recipe]);
 
   const handleCheck = (idx: number) => {
     setChecked(prev => prev.map((c, i) => (i === idx ? !c : c)));
+  };
+
+  const scaleIngredient = (ing: string) => {
+    if (servings === recipe.servings) return ing;
+    const ratio = servings / recipe.servings;
+    // Simple regex to find numbers/fractions at the start of the string
+    return ing.replace(/^(\d+(\.\d+)?)/, (match) => {
+      const num = parseFloat(match);
+      return (num * ratio).toFixed(1).replace(/\.0$/, '');
+    });
   };
 
   const handleShare = async () => {
@@ -34,82 +47,38 @@ export default function Modal({ recipe, onClose }: Props) {
     }
   };
 
-  // Print-only rendering and robust dynamic scaling for best results
-  if (typeof window !== 'undefined') {
-    const printContainerId = 'print-recipe-container';
-    function scaleToFitOnePage(container: HTMLElement) {
-      if (!container) return;
-      // A4 page height in px at 96dpi (approx)
-      const pageHeight = 1122; // 297mm
-      const margin = 40; // px
-      const contentHeight = container.offsetHeight;
-      let scale = 1;
-      if (contentHeight > pageHeight - margin) {
-        scale = (pageHeight - margin) / contentHeight;
-        container.style.transform = `scale(${scale})`;
-        container.style.height = `${contentHeight * scale}px`;
-        container.style.transformOrigin = 'top left';
-      } else {
-        container.style.transform = 'scale(1)';
-        container.style.height = '';
-      }
-    }
-    function moveModalForPrint() {
-      const modal = document.querySelector('.modal-content');
-      if (!modal) return;
-      let printContainer = document.getElementById(printContainerId);
-      if (!printContainer) {
-        printContainer = document.createElement('div');
-        printContainer.id = printContainerId;
-        printContainer.style.display = 'none';
-        document.body.appendChild(printContainer);
-      }
-      printContainer.innerHTML = '';
-      printContainer.appendChild(modal.cloneNode(true));
-      printContainer.style.display = 'block';
-      const overlayElem = document.querySelector('.modal-overlay');
-      if (overlayElem && overlayElem instanceof HTMLElement) {
-        overlayElem.style.display = 'none';
-      }
-      // Robust scaling: wait for print media query
-      const mediaQueryList = window.matchMedia('print');
-      function handlePrintEvent(e: MediaQueryListEvent) {
-        if (e.matches) {
-          setTimeout(() => scaleToFitOnePage(printContainer as HTMLElement), 100);
-        }
-      }
-      mediaQueryList.addEventListener('change', handlePrintEvent);
-      // Fallback for browsers that don't support matchMedia events
-      setTimeout(() => scaleToFitOnePage(printContainer), 200);
-    }
-    function restoreModalAfterPrint() {
-      const printContainer = document.getElementById(printContainerId);
-      if (printContainer) {
-        printContainer.style.display = 'none';
-        printContainer.style.transform = '';
-        printContainer.style.height = '';
-      }
-      const overlay = document.querySelector('.modal-overlay');
-      if (overlay && overlay instanceof HTMLElement) overlay.style.display = '';
-    }
-    window.addEventListener('beforeprint', moveModalForPrint);
-    window.addEventListener('afterprint', restoreModalAfterPrint);
-  }
+  // Print-only rendering logic
+  useEffect(() => {
+    const handleBeforePrint = () => {
+      // Logic for print handling if needed, but browser window.print() usually handles the visible modal well.
+    };
+    window.addEventListener('beforeprint', handleBeforePrint);
+    return () => window.removeEventListener('beforeprint', handleBeforePrint);
+  }, []);
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
+    <div className={`modal-overlay ${cookMode ? 'cook-mode-active' : ''}`} onClick={onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
-        <button className="modal-close" onClick={onClose} aria-label="Close modal">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </button>
-        {recipe.image ? (
-          <img src={recipe.image} alt={recipe.title} className="modal-hero" />
-        ) : (
-          <div className="modal-hero emoji-bg">{recipe.emoji}</div>
+        <div className="modal-controls">
+          <button className="cook-mode-toggle" onClick={() => setCookMode(!cookMode)}>
+            {cookMode ? '📖 View Details' : '👨‍🍳 Cook Mode'}
+          </button>
+          <button className="modal-close" onClick={onClose} aria-label="Close modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        
+        {!cookMode && (
+          recipe.image ? (
+            <img src={recipe.image} alt={recipe.title} className="modal-hero" />
+          ) : (
+            <div className="modal-hero emoji-bg">{recipe.emoji}</div>
+          )
         )}
+
         <div className="modal-body">
           <div className="modal-header">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -121,8 +90,15 @@ export default function Modal({ recipe, onClose }: Props) {
               )}
             </div>
             <div className="modal-meta">
-              <span>⏱ {recipe.time}</span>
-              <span>🍽 {recipe.servings} servings</span>
+              <span className="meta-item">⏱ {recipe.time}</span>
+              <span className="meta-item">🔥 {recipe.calories} kcal</span>
+              <span className="meta-item difficulty-badge">{recipe.difficulty}</span>
+              <div className="servings-adjuster">
+                <span>🍽 Servings:</span>
+                <button onClick={() => setServings(Math.max(1, servings - 1))}>-</button>
+                <span className="servings-count">{servings}</span>
+                <button onClick={() => setServings(servings + 1)}>+</button>
+              </div>
             </div>
           </div>
           <div className="modal-sections">
@@ -139,7 +115,9 @@ export default function Modal({ recipe, onClose }: Props) {
                         aria-label={`Check ingredient: ${ing}`}
                         style={{ marginRight: 8 }}
                       />
-                      <span style={{ textDecoration: checked[i] ? 'line-through' : undefined }}>{ing}</span>
+                      <span style={{ textDecoration: checked[i] ? 'line-through' : undefined }}>
+                        {scaleIngredient(ing)}
+                      </span>
                     </label>
                   </li>
                 ))}

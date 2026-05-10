@@ -87,6 +87,11 @@ function App() {
       setIsDarkMode(!isDarkMode);
     });
   };
+  
+  const handleSurpriseMe = () => {
+    const randomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
+    setSelectedRecipe(randomRecipe);
+  };
 
   return (
     <div className={`app-container ${!isDarkMode ? 'light-mode' : ''}`}>
@@ -99,19 +104,28 @@ function App() {
       <header className="header">
         <div className="header-top">
           <button className="theme-toggle" onClick={toggleTheme}>
-            {isDarkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}
+            {isDarkMode ? '🌞 Light' : '🌙 Dark'}
+          </button>
+          <button className="surprise-btn" onClick={handleSurpriseMe}>
+            ✨ Surprise Me
           </button>
         </div>
         <h1>Culinary Canvas</h1>
         <p>A premium collection of handcrafted recipes to elevate your dining experience.</p>
         
         <div className="search-bar">
-          <input 
-            type="text" 
-            placeholder="Search recipes..." 
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
+          <div className="input-group">
+            <svg className="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="text" 
+              placeholder="Search recipes..." 
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
           <select 
             className="sort-select" 
             value={sortBy} 
@@ -155,6 +169,38 @@ function App() {
           )}
         </div>
       </main>
+
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-section">
+            <h3>Culinary Canvas</h3>
+            <p>Elevating home cooking with premium, curated recipes for every occasion.</p>
+          </div>
+          <div className="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); handleFilterSelect('All'); }}>Browse All</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); handleFilterSelect('Favorites'); }}>My Favorites</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); handleSurpriseMe(); }}>Random Recipe</a></li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h4>Newsletter</h4>
+            <div className="newsletter-form">
+              <input type="email" placeholder="your@email.com" />
+              <button>Join</button>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>&copy; 2026 Culinary Canvas. All rights reserved.</p>
+          <div className="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+            <a href="#">YouTube</a>
+          </div>
+        </div>
+      </footer>
 
       {selectedRecipe && (
         <Modal recipe={selectedRecipe} onClose={() => setSelectedRecipe(null)} />
