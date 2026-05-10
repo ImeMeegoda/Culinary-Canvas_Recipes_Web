@@ -172,9 +172,10 @@ function App() {
 
       <footer className="footer">
         <div className="footer-content">
-          <div className="footer-section">
-            <h3>Culinary Canvas</h3>
-            <p>Elevating home cooking with premium, curated recipes for every occasion.</p>
+          <div className="footer-section creator-spotlight">
+            <div className="creator-badge">Owner & Visionary</div>
+            <h3>Imesha Meegoda</h3>
+            <p>The culinary mind and creative force behind Culinary Canvas. Dedicated to bringing high-end gastronomy into every home kitchen.</p>
           </div>
           <div className="footer-section">
             <h4>Quick Links</h4>
@@ -193,8 +194,14 @@ function App() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2026 Culinary Canvas. All rights reserved.</p>
-          <p className="creator-credit">Imesha Meegoda is the creator and owner of this website</p>
+          <div className="footer-copyright">
+            <p>&copy; 2026 Culinary Canvas.</p>
+            <p>Designed & Developed with ❤️</p>
+          </div>
+          <div className="creator-signature">
+            <span className="sig-text">Created by</span>
+            <span className="sig-name">Imesha Meegoda</span>
+          </div>
         </div>
       </footer>
 
